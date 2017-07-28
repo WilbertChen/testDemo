@@ -2,22 +2,19 @@
 <html>
 <head>
 	<title></title>
-	<script src="http://fb.me/react-0.10.0.min.js"></script>
-    
+	<script src="http://fb.me/JSXTransformer-0.13.0.js"></script>
+	<script src="https://fb.me/react-0.13.0.js"></script>
 </head>
 <body>
-<script>
-	var Helloword = React.crateClass({
+<script type="text/jsx">
+	var Helloword = React.createClass({
 		render: function(){
-			return {<h1>helloword</h1>}
+			return <h1>Hello World!</h1>;
 		}
 	});
 
-	ReactDOM.render(<Helloword/>, document.getElementById('container'));
-
+	React.render(<Helloword/>, document.getElementById('container'));
 </script>
 <div id="container"></div>
 </body>
 </html>
-
-
